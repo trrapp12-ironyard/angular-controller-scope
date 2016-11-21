@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="ngModelApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title</title>
+    <script src="./angular/angular.min.js"></script>
+    <script src="./angular/app.js"></script>
+  </head>
+  <body>
+
+    <h1>ngModel Examples</h1>
+
+    <div ng-controller="ExampleCtrl">
+      <h2>Inputs</h2>
+      <p>
+        <label for="txtStrInput">Textbook</label>
+        <input type="text" ng-model="txtStr" name="txtStrInput">
+      </p>
+      <p>
+        <label for="boolValInput">CheckBox</label>
+        <input type="checkbox" ng-model="boolVal" name="boolValInput">
+      </p>
+        <label for="dateValInput">Date</label>
+        <input type="date" name="dateValInput" ng-model="dateVal">
+      <p>
+        <p>
+          <input type="radio" value="opt1" ng-model="radioVal" /> Option 1
+          <input type="radio" value="opt2" ng-model="radioVal" /> Option 2
+          <input type="radio" value="opt3" ng-model="radioVal" /> Option 3
+        </p>
+        Our txtStr is {{txtStr}}.
+      </p>
+      <p>
+        Our BoolVal is {{boolVal}}.
+      </p>
+      <p>
+        Our dateVal is {{dateVal}}.
+      </p>
+      <p>
+        our radioVal is {{radioVal}}.
+      </p>
+    </div>
+
+    <div class="siblingAndNestedControllers">
+      <h2>Sibling Controllers</h2>
+      <div ng-controller="Ctrl1">
+        <p ng-bind="testVar"></p>
+        </div>
+        <div ng-controller="Ctrl2">
+          <p ng-bind="testVar">Comment out Ctrl2s $scope.testVar</p>
+        </div>
+
+        <h2>Nested Controllers</h2>
+        <div ng-controller="Ctrl1">
+          <p ng-bind="testVar">
+            <div ng-controller="Ctrl2">
+              <p ng-bind="testVar">
+                Comment out Ctrl2's $scope.testVar
+              </p>
+            </div>
+          </p>
+      </div>
+    </div>
+
+    <div class="controllerAs">
+      <h2>Controller As (aka aliases)</h2>
+      <div ng-controller="Ctrl1as as c1">
+        <p ng-bind="c1.testVar"></p>
+        <div ng-controller="Ctrl2as as c2">
+          <p ng-bind="c2.testVar">
+            Comment out Ctrl2's $scope.testVar
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
