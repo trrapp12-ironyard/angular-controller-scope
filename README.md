@@ -7,7 +7,7 @@
 <br>
 
 
-[![Button60](https://user-images.githubusercontent.com/11747875/145134031-63e505b6-c009-4e4b-8bd6-bc160c52c3f1.png)](https://www.dianarapp.com)
+[![Button60](https://user-images.githubusercontent.com/11747875/145134031-63e505b6-c009-4e4b-8bd6-bc160c52c3f1.png)](https://trrapp12.github.io/angular-controller-scope/)
 
 <br>
 
@@ -69,7 +69,7 @@ Project Demonstrating use of AngularJS directives.
 ### Project published at: 
 
 
-[Diana Tribute Page](https://trrapp12.github.io/diana-tribute/)
+[angular-controller-scope](https://trrapp12.github.io/angular-controller-scope/)
 
 <br>
 <br>
