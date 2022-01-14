@@ -38,10 +38,8 @@ Project Demonstrating use of AngularJS directives.
 
 
 
-### <a name="version1">Original project (v1.0) demonstrated the following:</a>
+### Project Demonstrates the Following: 
 
-
-![Original Project](https://user-images.githubusercontent.com/11747875/145134811-b1988778-44ab-43fd-b194-07041f0fb393.gif)
 
 - [X] **User Story #1:** My tribute page should have an element with a corresponding id="main", which contains all other elements.
 
