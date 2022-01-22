@@ -1,8 +1,10 @@
 # angular-controller-scope
 
- ---
- 
- ##### Trevor Rapp
+
+##### Contributors: Trevor Rapp
+
+---
+
 
 <br>
 
